@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Expenses</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Enter Expense Details</h2>
+    <form id="expenseForm">
+      <label for="personWhoPaid">Paid By:</label>
+      <select id="personWhoPaid"></select><br>
+
+      <label for="expenseAmount">Amount:</label>
+      <input type="number" id="expenseAmount" placeholder="Enter Expense Amount" required><br>
+
+      <label for="expenseDate">Date:</label>
+      <input type="date" id="expenseDate" required><br>
+
+      <label for="usageOfAmount">Usage of Amount:</label>
+      <input type="text" id="usageOfAmount" placeholder="Enter Usage Details" required><br>
+
+      <button type="button" onclick="addExpense()">Add Expense</button>
+    </form>
+    <p id="expenseMessage"></p>
+
+    <h2>All Expenses</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Sl No</th>
+          <th>Paid By</th>
+          <th>Amount</th>
+          <th>Date</th>
+          <th>Usage</th> 
+          <th>Edit</th> 
+          <th>Delete</th> 
+        </tr>
+      </thead>
+      <tbody id="expenseTableBody"></tbody>
+    </table>
+
+    <!-- <button type="button" onclick="calculateAmounts()">Calculate Settlements</button> -->
+
+    <h2>Settlement Summary</h2>
+    <ul id="settlementSummary"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

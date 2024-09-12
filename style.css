@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #loginPage, #addUsersPage, #expensePage, #forgotPasswordSection {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+
+  input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background-color: #218838;
+  }
+
+  h2, h3 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    color: red;
+  }
+
+  #forgotPasswordSection {
+    display: none;
+    margin-top: 20px;
+  }
+
+  #message, #forgotPasswordMessage {
+    color: red;
+  }

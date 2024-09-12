@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Users</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Add Users</h2>
+    <form id="userForm">
+      <input type="text" id="personName" placeholder="Enter Person's Name"><br>
+      <button type="button" onclick="addPerson()">Add Person</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Sl No</th>
+          <th>Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody"></tbody>
+    </table>
+    <button type="button" onclick="proceedToAddExpenses()">Add Expenses</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
