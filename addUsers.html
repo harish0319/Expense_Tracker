@@ -8,12 +8,12 @@
 </head>
 <body>
   <div class="container">
-    <h2>Add Users</h2>
     <form id="userForm">
+      <h2>Add Users</h2>
       <input type="text" id="personName" placeholder="Enter Person's Name"><br>
       <button type="button" onclick="addPerson()">Add Person</button>
     </form>
-    <table>
+    <table id="userTable">
       <thead>
         <tr>
           <th>Sl No</th>
@@ -21,7 +21,7 @@
           <th>Action</th>
         </tr>
       </thead>
-      <tbody id="userTableBody"></tbody>
+      <tbody id="userTableBody"></tbody>  
     </table>
     <button type="button" onclick="proceedToAddExpenses()">Add Expenses</button>
   </div>

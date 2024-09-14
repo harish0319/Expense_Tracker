@@ -8,8 +8,8 @@
 </head>
 <body>
   <div class="container">
-    <h2>Enter Expense Details</h2>
     <form id="expenseForm">
+      <h2>Enter Expense Details</h2>
       <label for="personWhoPaid">Paid By:</label>
       <select id="personWhoPaid"></select><br>
 
@@ -26,26 +26,33 @@
     </form>
     <p id="expenseMessage"></p>
 
-    <h2>All Expenses</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Sl No</th>
-          <th>Paid By</th>
-          <th>Amount</th>
-          <th>Date</th>
-          <th>Usage</th> 
-          <th>Edit</th> 
-          <th>Delete</th> 
-        </tr>
-      </thead>
-      <tbody id="expenseTableBody"></tbody>
-    </table>
+    <div class="expense-box">
+      <h2>All Expenses</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Sl No</th>
+                <th>Paid By</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Usage</th> 
+                <th>Edit</th> 
+                <th>Delete</th> 
+              </tr>
+            </thead>
+            <tbody id="expenseTableBody"></tbody>
+          </table>
+    </div>
+    
 
     <!-- <button type="button" onclick="calculateAmounts()">Calculate Settlements</button> -->
 
     <h2>Settlement Summary</h2>
-    <ul id="settlementSummary"></ul>
+    <ul id="settlementSummary">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
   </div>
 
   <script src="script.js"></script>
