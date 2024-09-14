@@ -154,26 +154,43 @@ body {
     background-color: #f9f9f9;
   }
 
-  #settlementSummary {
-    list-style-type: none;
-    padding: 0;
+  #settlementBox {
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 30px; /* Center the box and add space below */
+    text-align: center; /* Align the heading and items centrally */
   }
-  
+
+  #settlementHeading {
+    font-size: 26px;
+    color: #4CAF50; /* Green color to differentiate */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc; /* Separator line below the heading */
+    padding-bottom: 10px;
+  }
+
+  /* Styling for the Settlement Summary list */
+  #settlementSummary {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align list items to the left */
+  }
+
+  /* List item styling */
   #settlementSummary li {
     padding: 10px 0;
     border-bottom: 1px solid #eee;
     color: #555;
     font-size: 18px;
   }
-  
+
+  /* Remove the border for the last list item */
   #settlementSummary li:last-child {
     border-bottom: none;
   }
